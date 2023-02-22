@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Chat demo</title>
+</head>
+<body>
+    
+
+    <h1 id="heading">Chat demo</h1>
+    <form action="" id="user-container">
+        <label for="">Name</label>
+        <input type="text" name="name" id="name">
+        <br>
+        <label for="">Room</label>
+        <input type="text" name="room" id="room">
+        <button type="submit" id="join-btn">JOIN</button>
+        <br>
+        <a href="/refactor/client/client.html">
+            <button type="button" id="exit-btn" disabled="true"> Sign out</button>
+        </a>
+    </form>
+
+    <div id="chat-container">
+        <div id="message-container"></div>
+        <form action="" id="send-container">
+            <input type="text" name="" id="message-input">
+            <button type="submit" id="send-button">Send</button>
+        </form>
+    </div>
+</body>
+<script src="https://cdn.socket.io/socket.io-2.1.0.js"></script>
+<script src="client.js"></script>
+</html>
+
+
