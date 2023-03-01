@@ -49,5 +49,3 @@ server.on("connection", (socket) => {
     // console.log(server.engine.clients);
   }
 });
-
-module.exports = server;
