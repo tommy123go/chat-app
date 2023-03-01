@@ -9,7 +9,6 @@ var server = socketServer.start(5000);
 
 // listen to connection
 
-// server.on("connection", (socket) => {
 server.on("connection", (socket) => {
   socket.on("client:info", (data) => {
     socket.join(data.roomId);
@@ -50,3 +49,5 @@ server.on("connection", (socket) => {
     // console.log(server.engine.clients);
   }
 });
+
+module.exports = server;
