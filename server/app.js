@@ -46,6 +46,5 @@ server.on("connection", (socket) => {
   function onDisconnect() {
     clientManager.remove(socket.id);
     console.log(clientManager.getAll());
-    // console.log(server.engine.clients);
   }
 });
